@@ -1,0 +1,83 @@
+    {
+        "usuarios": [
+            {
+                "nome": "Larissa Isabela Sophia das Neves",
+                "sexo": "Feminino",
+                "cpf": "150.515.371-97",
+                "data_nasc": "04/04/1973",
+                "email": "larissa_dasneves@pmm.am.gov.br",
+                "senha": "DgCcR5cPrh",
+                "cep": "26293-555",
+                "logradouro": "Rua Paquetá",
+                "localidade": "Nova Iguaçu",
+                "uf": "RJ",
+                "id": 1
+            },
+            {
+                "nome": "Hugo Matheus Enzo Vieira",
+                "sexo": "Masculino",
+                "cpf": "338.006.324-03",
+                "data_nasc": "14/04/1963",
+                "email": "hugo.matheus.vieira@moyageorges.com.br",
+                "senha": "h64QScjuHs",
+                "cep": "69918-424",
+                "logradouro": "Rua Várzea Grande",
+                "localidade": "rio Branco",
+                "uf": "AC",
+                "id": 2
+            },
+            {
+                "nome": "Regina Luna Ester Souza",
+                "sexo": "Feminino",
+                "cpf": "105.795.207-90",
+                "data_nasc": "21/03/1944",
+                "email": "regina-souza90@infilink.com.br",
+                "senha": "pb7lLLkNrh",
+                "cep": "58069-263",
+                "logradouro": "Rua Norma de Araújo Batista",
+                "localidade": "João Pessoa",
+                "uf": "PB",
+                "id": 3
+            },
+            {
+                "nome": "Noah Benedito Costa",
+                "sexo": "Masculino",
+                "cpf": "445.006.068-74",
+                "data_nasc": "14/03/1993",
+                "email": "noah_benedito_costa@skyzepp.com",
+                "senha": "o8GHXhedwB",
+                "cep": "64204-175",
+                "logradouro": "Rua Felicidade Veras Neves",
+                "localidade": "Parnaíba",
+                "uf": "PI",
+                "id": 4
+            },
+            {
+                "nome": "Samuel César Freitas",
+                "sexo": "Masculino",
+                "cpf": "952.846.218-91",
+                "data_nasc": "08/03/1988",
+                "email": "samuelcesarfreitas@focustg.com.br",
+                "senha": "rSutHy4ltD",
+                "cep": "69307-705",
+                "logradouro": "Rua Do iate",
+                "localidade": "Boa Vista",
+                "uf": "RR",
+                "id": 5
+            },
+            {
+                "nome": "Bruna Carolina Cardoso",
+                "sexo": "Feminino",
+                "cpf": "429.276.496-42",
+                "data_nasc": "22/02/1971",
+                "email": "bruna-cardoso77@sabesp.com.br",
+                "senha": "xnWR4wH5jF",
+                "cep": "57301-040",
+                "logradouro": "Rua Senhor dos Pobres",
+                "localidade": "Arapiraca",
+                "uf": "AL",
+                "id": 6
+            }
+        ]
+    }
+    
