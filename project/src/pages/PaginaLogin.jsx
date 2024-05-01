@@ -4,7 +4,7 @@ import styles from "./PaginaLogin.module.css"
 function PaginaLogin() {
     return (
         <div className={styles.content}>
-            <div className={styles.formContent}>
+            <div className={styles.formBlock}>
                 <h1 className={styles.title}>Login</h1>
 
                 <form>

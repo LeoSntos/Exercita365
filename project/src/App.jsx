@@ -1,11 +1,11 @@
 import './App.css'
-import PaginaLogin from './pages/PaginaLogin'
+import PaginaCadastroUsuario from './pages/PaginaCadastroUsuario'
 
 function App() {
 
   return (
     <>
-    <PaginaLogin/>
+    <PaginaCadastroUsuario/>
     </>
   )
 }
