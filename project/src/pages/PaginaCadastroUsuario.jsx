@@ -46,9 +46,8 @@ function PaginaCadastroUsuario() {
                         <TextField type="email" label="E-mail" />
                         <TextField type="password" label="Senha" />
                     </div>
-                        <TextField type="text" label="Cep" placeholder="xxxxx-xx" sx={{ width: 447, height: 60 }} />
-
-                        <Button variant="contained">Cadastrar</Button>
+                    <TextField type="text" label="Cep" placeholder="xxxxx-xx" sx={{ width: 447, height: 60 }} />
+                    <Button variant="contained">Cadastrar</Button>
                 </form>
             </div>
         </div>

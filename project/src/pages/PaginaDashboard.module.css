@@ -1,0 +1,22 @@
+.mainCotent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #5BC0EB;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contentMap {
+    border: black 5px solid;
+}
+
+.estatisticas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 1000px;
+}
+
