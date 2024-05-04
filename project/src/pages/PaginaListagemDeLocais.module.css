@@ -1,0 +1,16 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #5BC0EB;
+    width: 100vw;
+    height: 100vh;
+}
+
+.block {
+    background: #6A706E;
+    padding: 400px 500px;
+    border-radius: 10px;
+    color: whitesmoke;
+}

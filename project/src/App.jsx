@@ -1,11 +1,11 @@
 import './App.css'
-import PaginaCadastroLocal from './pages/PaginaCadastroLocal'
+import PaginaListagemDeLocais from './pages/PaginaListagemDeLocais'
 
 function App() {
 
   return (
     <>
-    <PaginaCadastroLocal/>
+    <PaginaListagemDeLocais/>
     </>
   )
 }
