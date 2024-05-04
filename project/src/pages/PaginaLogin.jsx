@@ -1,5 +1,6 @@
 import { Button, TextField } from "@mui/material"
 import styles from "./PaginaLogin.module.css"
+import { Link} from "react-router-dom"
 
 function PaginaLogin() {
     return (
@@ -11,7 +12,7 @@ function PaginaLogin() {
                     <TextField type="text" label="Email" />
                     <TextField type="password" label="Senha" />
 
-                    <p>Nao está cadastrado ainda? clique <a>aqui</a></p>
+                    <p>Nao está cadastrado ainda? clique <Link to="/Pagina-cadastro-usuario">aqui</Link></p>
                     <Button variant="contained" type="submit">Entrar</Button>
                 </form>
             </div>
