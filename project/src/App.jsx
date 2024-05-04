@@ -1,11 +1,11 @@
 import './App.css'
-import PaginaListagemDeLocais from './pages/PaginaListagemDeLocais'
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <>
-    <PaginaListagemDeLocais/>
+    <Header/>
     </>
   )
 }
