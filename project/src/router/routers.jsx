@@ -1,4 +1,4 @@
-import { createBrowserRouter} from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom"
 import PaginaCadastroUsuario from "../pages/PaginaCadastroUsuario"
 import PaginaDashboard from "../pages/PaginaDashboard"
 import PaginaCadastroLocal from "../pages/PaginaCadastroLocal"
@@ -8,19 +8,19 @@ import App from "../App"
 
 const routers = createBrowserRouter([
     {
+        path: "/Login",
+        element: <PaginaLogin />
+    },
+    {
+        path: "/Pagina-cadastro-usuario",
+        element: <PaginaCadastroUsuario />
+    },
+    {
         path: "/",
-        element: <App/>,
+        element: <App />,
         children: [
             {
                 path: "/",
-                element: <PaginaLogin />
-            },
-            {
-                path: "/Pagina-cadastro-usuario",
-                element: <PaginaCadastroUsuario/>
-            },
-            {
-                path: "/Pagina-dashboard",
                 element: <PaginaDashboard />
             },
             {
