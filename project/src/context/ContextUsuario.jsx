@@ -38,8 +38,13 @@ export const ContextUsuariosProvider = ({ children }) => {
         }
     }
 
+    function logout() {
+        localStorage.setItem("estaAutenticado", false)
+        window.location.href = "/Login"
+    }
+
     return (
-        <ContextUsuarios.Provider value={{ data, loading, login }}>
+        <ContextUsuarios.Provider value={{ data, loading, login, logout }}>
             {children}
         </ContextUsuarios.Provider>
     )

@@ -5,6 +5,7 @@ import PaginaCadastroLocal from "../pages/PaginaCadastroLocal"
 import PaginaListagemDeLocais from "../pages/PaginaListagemDeLocais"
 import PaginaLogin from "../pages/PaginaLogin"
 import App from "../App"
+import PrivateRoute from "../components/PrivateRoute/PrivateRoute"
 
 const routers = createBrowserRouter([
     {
@@ -17,7 +18,11 @@ const routers = createBrowserRouter([
     },
     {
         path: "/",
-        element: <App />,
+        element: (
+            <PrivateRoute>
+                <App />
+            </PrivateRoute>
+        ),
         children: [
             {
                 path: "/",
