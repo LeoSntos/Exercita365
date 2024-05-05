@@ -34,15 +34,15 @@ function PaginaCadastroLocal() {
                         />
                         <FormControlLabel
                             control={
-                                <Checkbox name="Musculaçao" />
+                                <Checkbox name="Natação" />
                             }
-                            label="Musculaçao"
+                            label="Natação"
                         />
                         <FormControlLabel
                             control={
-                                <Checkbox name="Nataç[ao" />
+                                <Checkbox name="Surf" />
                             }
-                            label="Musculaçao"
+                            label="Surf"
                         />
                     </FormGroup>
                     <Button variant="contained" type="Submit">enviar</Button>

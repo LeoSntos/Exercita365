@@ -22,7 +22,7 @@ function PaginaLogin() {
                 <h1 className={styles.title}>Login</h1>
 
                 <form>
-                    <TextField type="text" label="Email" onChange={e => setUsuario({...usuario, email: e.target.value})}/>
+                    <TextField type="email" label="Email" onChange={e => setUsuario({...usuario, email: e.target.value})}/>
                     <TextField type="password" label="Senha" onChange={e => setUsuario({...usuario, senha: e.target.value})}/>
 
                     <p>Nao está cadastrado ainda? clique <Link to="/Pagina-cadastro-usuario">aqui</Link></p> 
