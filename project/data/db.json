@@ -79,16 +79,61 @@
       "id": 6
     },
     {
-      "nome": "leonardo brognoli dos santos",
+      "nome": "leonardo",
       "sexo": "Masculino",
       "cpf": "160.293.039-29",
       "data_nasc": "27/03/2007",
-      "email": "perebabrognoli17@gmail.com",
-      "senha": "27032007",
+      "email": "leo@gmail.com",
+      "senha": "123456",
       "cep": "88066-503",
+      "logradouro": "Servidão Rosa Maria Pires",
       "localidade": "Florianópolis",
       "uf": "SC",
       "id": 7
+    }
+  ],
+  "locais": [
+    {
+      "nomeLocal": "Praia do Saco do Matadouro",
+      "nomeCriador": "Hugo Matheus Enzo Vieira",
+      "descriçaoLocal": "Praia protegida com dois cafés simples e acesso a pé por ponte e trilha.",
+      "Cordenadas": "-27.753415211762015, -48.49940427798169",
+      "cep": "88066-460",
+      "bairro": "Armação do Pântano do Sul",
+      "logradouro": "Rua Luiz Gonzaga dos Santos",
+      "localidade": "Florianópolis",
+      "uf": "SC",
+      "Caminhada": true,
+      "Trilha": true,
+      "Musculaçao": false,
+      "Natação": false,
+      "Surf": false,
+      "tiposDePraticas": [
+        "Caminhada",
+        "Trilha"
+      ],
+      "id": 1
+    },
+    {
+      "nomelocal": "Lagoinha do leste",
+      "nomeCriador": "Leonardo Brognoli Dos Santos",
+      "descriçaoLocal": "é tranquila e não é difícil. já a trilha pra chegar no topo do morro da coroa é bem íngreme e pesadinha, mas dá pra fazer calmamente e com pausas",
+      "cep": "88067-079",
+      "bairro": "Pântano do Sul ",
+      "logradouro": "Rua Manoel Pedro Oliveira ",
+      "localidade": "Florianópolis ",
+      "uf": "SC",
+      "Cordenadas": "-27.778955363617126, -48.506330482407414",
+      "Caminhada": false,
+      "Trilha": true,
+      "Musculaçao": false,
+      "Natação": false,
+      "Surf": true,
+      "tiposDePraticas": [
+        "Trilha",
+        "Surf"
+      ],
+      "id": 2
     }
   ]
 }

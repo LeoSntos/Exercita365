@@ -1,14 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ContextUsuariosProvider } from './context/ContextUsuario';
+import { ContextGlobalProvider } from './context/ContextGlobal.jsx'
 import { RouterProvider } from 'react-router-dom'
 import routers from './router/routers.jsx'
 import './index.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <ContextUsuariosProvider>
+
+    <ContextGlobalProvider>
         <RouterProvider router={routers}>
         </RouterProvider>
-    </ContextUsuariosProvider>
+    </ContextGlobalProvider>
+    
 )

@@ -113,6 +113,13 @@ function PaginaCadastroUsuario() {
                             message: "Cep invalido"
                         }
                     })} />
+                    <TextField type="text" label={errors?.cep?.message || "Logradouro"} name="logradouro" placeholder="Ex: Apt.12 rua X" sx={{ width: 447, height: 60 }} {...register("logradouro", {
+                        required: "logradouro obrigatorio",
+                        pattern: {
+                            value: /^[\p{L}\s\-']+$/u,
+                            message: "Logradouro invalido"
+                        }
+                    })} />
                     <TextField type="text" label={errors?.localidade?.message || "Localidade"} name="localidade" placeholder="Sua cidade" sx={{ width: 447, height: 60 }} {...register("localidade", {
                         required: "Cidade obrigatorio",
                         pattern: {
