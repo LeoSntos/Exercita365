@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 export const ContextLocal = createContext()
 
 export const ContextLocalProvider = ({ children }) => {
-    const { data, loading } = useFetch("http://localhost:3000/locais")
+    const { data , loading } = useFetch("http://localhost:3000/locais")
 
     function cadastrarLocal(local) {
         fetch("http://localhost:3000/locais", {
@@ -13,7 +13,7 @@ export const ContextLocalProvider = ({ children }) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-        }).then(() => alert("Local Cadastrado com sucesso!") && reloud())
+        }).then(() => alert("Local Cadastrado com sucesso!") && window.location.reload())
         .catch(() => alert("Erro ao cadastrar local!"))
     }
 

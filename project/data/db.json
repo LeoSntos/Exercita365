@@ -1,6 +1,7 @@
 {
   "usuarios": [
     {
+      "isLogado": false,
       "nome": "Larissa Isabela Sophia das Neves",
       "sexo": "Feminino",
       "cpf": "150.515.371-97",
@@ -14,6 +15,7 @@
       "id": 1
     },
     {
+      "isLogado": false,
       "nome": "Hugo Matheus Enzo Vieira",
       "sexo": "Masculino",
       "cpf": "338.006.324-03",
@@ -27,6 +29,7 @@
       "id": 2
     },
     {
+      "isLogado": false,
       "nome": "Regina Luna Ester Souza",
       "sexo": "Feminino",
       "cpf": "105.795.207-90",
@@ -40,6 +43,7 @@
       "id": 3
     },
     {
+      "isLogado": true,
       "nome": "Noah Benedito Costa",
       "sexo": "Masculino",
       "cpf": "445.006.068-74",
@@ -53,6 +57,7 @@
       "id": 4
     },
     {
+      "isLogado": false,
       "nome": "Samuel César Freitas",
       "sexo": "Masculino",
       "cpf": "952.846.218-91",
@@ -66,6 +71,7 @@
       "id": 5
     },
     {
+      "isLogado": false,
       "nome": "Bruna Carolina Cardoso",
       "sexo": "Feminino",
       "cpf": "429.276.496-42",
@@ -79,6 +85,7 @@
       "id": 6
     },
     {
+      "isLogado": true,
       "nome": "leonardo",
       "sexo": "Masculino",
       "cpf": "160.293.039-29",
@@ -113,27 +120,6 @@
         "Trilha"
       ],
       "id": 1
-    },
-    {
-      "nomelocal": "Lagoinha do leste",
-      "nomeCriador": "Leonardo Brognoli Dos Santos",
-      "descriçaoLocal": "é tranquila e não é difícil. já a trilha pra chegar no topo do morro da coroa é bem íngreme e pesadinha, mas dá pra fazer calmamente e com pausas",
-      "cep": "88067-079",
-      "bairro": "Pântano do Sul ",
-      "logradouro": "Rua Manoel Pedro Oliveira ",
-      "localidade": "Florianópolis ",
-      "uf": "SC",
-      "Cordenadas": "-27.778955363617126, -48.506330482407414",
-      "Caminhada": false,
-      "Trilha": true,
-      "Musculaçao": false,
-      "Natação": false,
-      "Surf": true,
-      "tiposDePraticas": [
-        "Trilha",
-        "Surf"
-      ],
-      "id": 2
     }
   ]
 }

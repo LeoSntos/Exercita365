@@ -1,14 +1,19 @@
-import "./CardsLocais.css"
+import styles from "./CardsLocais.module.css"
 
-function CardLocais({ NomeLocal, endereco }) {
+function CardLocais({props}) {
     return (
         <div>
-            <div className="locais">
-                <p>Nome do local: {NomeLocal}</p>
-                <p>Nome do criador: {NomeLocal}</p>
-                <p>Descriçao do local: {NomeLocal}</p>
-                <p>Localizaçao: {endereco} | cordenadas: {NomeLocal}</p>
-                <p>Tipos de praticas: {NomeLocal}</p>
+            <div className={styles.locais}>
+                <p>Nome do local: {props.nomeLocal}</p>
+                <p>Nome do criador: {props.nomeCriador}</p>
+                <p>Descriçao do local: {props.descriçaoLocal}</p>
+                <p>Bairro: {props.bairro}</p>
+                <p>Lougradouro: {props.logradouro}</p>
+                <p>Cidade: {props.localidade}</p>
+                <p>Estado: {props.uf}</p>
+                <p> Tipos de Praticas:</p>
+                {props.tiposDePraticas.map((pratica, index) => (<p key={index}> * {pratica}</p>))}
+                
             </div>
         </div>
     )

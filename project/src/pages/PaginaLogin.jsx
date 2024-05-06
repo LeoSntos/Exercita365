@@ -13,7 +13,7 @@ function PaginaLogin() {
     })
     
     async function relizarLogin() {
-        await login(usuario.email, usuario.senha)
+        await login(usuario.email, usuario.senha,)
     } 
 
     return (

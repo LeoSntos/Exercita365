@@ -1,4 +1,4 @@
-.mainCotent {
+.mainContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,11 +12,24 @@
     border: black 5px solid;
 }
 
-.estatisticas {
+.usuarios {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    gap: 1000px;
+    height: 100vh;
+    gap: 100px;
 }
+
+.estatisticas {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 500px;
+    background-color: #5BC0EB;
+}
+
 

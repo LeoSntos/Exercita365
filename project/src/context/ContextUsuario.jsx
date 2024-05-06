@@ -4,14 +4,12 @@ import useFetch from "../hooks/useFetch";
 export const ContextUsuarios = createContext()
 
 export const ContextUsuariosProvider = ({ children }) => {
-    const { data, loading } = useFetch("http://localhost:3000/usuarios")
-    const { usuario, setUsurio } = useState({})
+    const { data , loading } = useFetch("http://localhost:3000/usuarios")
 
     async function login(email, senha) {
         try {
             const res = await fetch("http://localhost:3000/usuarios")
             const dados = await res.json()
-
             let existeUsuario = false
 
             dados.map(usuario => {
@@ -19,6 +17,7 @@ export const ContextUsuariosProvider = ({ children }) => {
                     existeUsuario = true
                     if (usuario.senha == senha) {
                         localStorage.setItem("estaAutenticado", true)
+                        UsuarioLogado(usuario.id)
                         window.location.href = "/"
                         return
                     }
@@ -26,7 +25,6 @@ export const ContextUsuariosProvider = ({ children }) => {
                     alert("Senha ou Email incorreta")
                     return
                 }
-
 
             })
 
@@ -39,9 +37,43 @@ export const ContextUsuariosProvider = ({ children }) => {
         }
     }
 
-    function logout() {
-        localStorage.setItem("estaAutenticado", false)
-        window.location.href = "/Login"
+    async function logout() {
+        try {
+            const res = await fetch("http://localhost:3000/usuarios");
+            const dados = await res.json();
+
+            // Encontrar o usuário logado
+            const usuarioLogado = dados.find(usuario => usuario.isLogado === true);
+            if (usuarioLogado) {
+                // Atualizar o status de login do usuário para false
+                await fetch(`http://localhost:3000/usuarios/${usuarioLogado.id}`, {
+                    method: "PATCH",
+                    body: JSON.stringify({ isLogado: false }),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                });
+            }
+
+            localStorage.setItem("estaAutenticado", false);
+            window.location.href = "/Login";
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async function UsuarioLogado(userId) {
+        try {
+            await fetch(`http://localhost:3000/usuarios/${userId}`, {
+                method: "PATCH",
+                body: JSON.stringify({ isLogado: true }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     function cadastrarUsuario(usuario) {
@@ -61,7 +93,7 @@ export const ContextUsuariosProvider = ({ children }) => {
         })
             .then(() => {
                 alert("Usuário cadastrado com sucesso!")
-                window.location.href = "/login" 
+                window.location.href = "/login"
                 return
             })
             .catch(() => alert("Erro ao cadastrar usuário!"))

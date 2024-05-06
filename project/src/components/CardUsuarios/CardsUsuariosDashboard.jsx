@@ -1,10 +1,10 @@
 import "./CardsUsuariosDashboard.css"
 
-function CardsUsuariosDashboard({usuariosOnline}) {
+function CardsUsuariosDashboard({UsuariosOn}) {
     return (
         <div className="Card">
             <h3>Usuarios</h3>
-            <p>Total de Usuarios Online: {usuariosOnline}</p> 
+            <p>Total de Usuarios Online: {UsuariosOn}</p> 
         </div>
     )
 
