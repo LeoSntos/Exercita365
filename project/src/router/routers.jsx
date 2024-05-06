@@ -4,6 +4,7 @@ import PaginaDashboard from "../pages/PaginaDashboard"
 import PaginaCadastroLocal from "../pages/PaginaCadastroLocal"
 import PaginaListagemDeLocais from "../pages/PaginaListagemDeLocais"
 import PaginaLogin from "../pages/PaginaLogin"
+import PaginaEditarLocal from "../pages/PaginaEditarLocal"
 import App from "../App"
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute"
 
@@ -35,6 +36,10 @@ const routers = createBrowserRouter([
             {
                 path: "/Pagina-listagem-de-locais",
                 element: <PaginaListagemDeLocais />
+            },
+            {
+                path: "/Pagina-editar-local/:id",
+                element: <PaginaEditarLocal />
             }
         ]
     }

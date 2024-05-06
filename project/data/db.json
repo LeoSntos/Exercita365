@@ -43,7 +43,7 @@
       "id": 3
     },
     {
-      "isLogado": true,
+      "isLogado": false,
       "nome": "Noah Benedito Costa",
       "sexo": "Masculino",
       "cpf": "445.006.068-74",
@@ -101,23 +101,24 @@
   ],
   "locais": [
     {
-      "nomeLocal": "Praia do Saco do Matadouro",
+      "nomeLocal": "Praia do matadeiro",
       "nomeCriador": "Hugo Matheus Enzo Vieira",
       "descriçaoLocal": "Praia protegida com dois cafés simples e acesso a pé por ponte e trilha.",
-      "Cordenadas": "-27.753415211762015, -48.49940427798169",
       "cep": "88066-460",
       "bairro": "Armação do Pântano do Sul",
       "logradouro": "Rua Luiz Gonzaga dos Santos",
       "localidade": "Florianópolis",
       "uf": "SC",
+      "cordenadas": "-27.753415211762015, -48.49940427798169",
       "Caminhada": true,
-      "Trilha": true,
+      "Trilha": false,
       "Musculaçao": false,
-      "Natação": false,
-      "Surf": false,
+      "Natação": true,
+      "Surf": true,
       "tiposDePraticas": [
         "Caminhada",
-        "Trilha"
+        "Natação",
+        "Surf"
       ],
       "id": 1
     }

@@ -7,6 +7,7 @@ function CardLocais({props}) {
                 <p>Nome do local: {props.nomeLocal}</p>
                 <p>Nome do criador: {props.nomeCriador}</p>
                 <p>Descriçao do local: {props.descriçaoLocal}</p>
+                <p>Cordenadas: {props.cordenadas}</p>
                 <p>Bairro: {props.bairro}</p>
                 <p>Lougradouro: {props.logradouro}</p>
                 <p>Cidade: {props.localidade}</p>

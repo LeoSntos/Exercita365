@@ -1,13 +1,35 @@
 import { TextField, Button, FormLabel, FormGroup, FormControlLabel, Checkbox } from "@mui/material"
 import { ContextLocal } from "../context/ContextLocal"
-import styles from "./PaginaCadastroLocal.module.css"
+import styles from "./PaginaEditarLocal.module.css"
 import { useForm } from "react-hook-form"
-import { useContext } from "react"
+import { useContext, useEffect, useState} from "react"
+import { useParams } from "react-router-dom"
 
 
-function PaginaCadastroLocal() {
-    const { cadastrarLocal } = useContext(ContextLocal)
+function PaginaEditarLocal() {
+    const { editarLocal } = useContext(ContextLocal)
     const { register, handleSubmit, setValue, getValues, formState: { errors } } = useForm()
+    const [localData, setLocalData] = useState(null)
+    const { id } = useParams()
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/locais/${id}`)
+            .then(res => res.json())
+            .then(data => {
+                setLocalData(data)
+                setLocalData(data)
+                setValue("nomeLocal", data.nomeLocal)
+                setValue("nomeCriador", data.nomeCriador)
+                setValue("descriçaoLocal", data.descriçaoLocal)
+                setValue("cep", data.cep)
+                setValue("bairro", data.bairro)
+                setValue("logradouro", data.logradouro)
+                setValue("localidade", data.localidade)
+                setValue("uf", data.uf)
+                setValue("cordenadas", data.cordenadas)
+            })
+            .catch(err => console.log(err))
+    }, [setValue, id])
 
     const buscarCep = async () => {
         let cep = getValues("cep")
@@ -32,13 +54,13 @@ function PaginaCadastroLocal() {
 
         formValue.tiposDePraticas = tiposDePraticasEcolhidas
 
-        cadastrarLocal(formValue)
+        editarLocal(formValue, id)
     }
 
     return (
         <div className={styles.mainCotent}>
             <div className={styles.formBlock}>
-                <h1>Cadastro de locais de exercicios</h1>
+                <h1>Ediçao de locais de exercicios</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <TextField label={errors?.nomeLocal?.message || "Nome do local"} name="Nomelocal" type="text" sx={{ width: 450 }} {...register("nomeLocal", {
@@ -148,11 +170,11 @@ function PaginaCadastroLocal() {
                             label="Surf"
                         />
                     </FormGroup>
-                    <Button variant="contained" type="Submit">enviar</Button>
+                    <Button variant="contained" type="Submit">Editar</Button>
                 </form>
             </div>
         </div >
     )
 }
 
-export default PaginaCadastroLocal
+export default PaginaEditarLocal
