@@ -30,3 +30,7 @@ Muitas pessoas buscam por bons locais para a prática de atividades físicas ao 
 - Permitir que os usuários adicionem avaliações e comentários sobre os locais
 
 Este projeto foi desenvolvido como parte de um portfólio pessoal e está aberto para contribuições e sugestões de melhorias. Sinta-se à vontade para explorar o código-fonte e enviar feedback.
+
+
+Link para pasta do google drive com video do projeto:
+https://drive.google.com/drive/folders/14USSnltzxf9gg52DzwGFgA3WXavetjZI?usp=sharing
