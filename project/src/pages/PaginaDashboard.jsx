@@ -11,11 +11,10 @@ import useFetch from "../hooks/useFetch"
 
 function PaginaDashboard() {
     const center = [-11.434208898116495, -51.55740871060603]
-    const position = [-27.69881090597128, -48.467332209483686]
 
     const { data: dataLocais } = useContext(ContextLocal)
     const { data } = useContext(ContextUsuarios)
-    
+
 
     const usuariosOnline = data ? data.filter((usuario) => usuario.isLogado === true).length : 0;
 
@@ -35,11 +34,30 @@ function PaginaDashboard() {
                         <TileLayer
                             url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=WqRk2pZtPBLIiFTOw05Q"
                             attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>' />
-                        <Marker position={position}>
-                            <Popup>
-                                exemplo de execicio
-                            </Popup>
-                        </Marker>
+                        {dataLocais && dataLocais.map(local => (
+                            <Marker key={local.id} position={[local.cordenadas.split(",")[0], local.cordenadas.split(",")[1]]}>
+                                <Popup>
+                                    <ul>
+                                        <li><h5>Nome do local:</h5> {local.nomeLocal}</li>
+                                        <br />
+                                        <li><h5>Nome do criador:</h5> {local.nomeCriador}</li>
+                                        <br />
+                                        <li><h5> Descrição do local: </h5> {local.descriçaoLocal}</li>
+                                        <br />
+                                        <li><h5>CEP:</h5> {local.cep}</li>
+                                        <br />
+                                        <li><h5>Logradouro:</h5> {local.logradouro}</li>
+                                        <br />
+                                        <li><h5>Bairro:</h5> {local.bairro}</li>
+                                        <br />
+                                        <li><h5>Cidade:</h5> {local.localidade}</li>
+                                        <br />
+                                        <ul> <h5>Tipos de praticas:</h5> {local.tiposDePraticas && local.tiposDePraticas.map(pratica => <li>{pratica}</li>)}</ul>
+                                    </ul>
+                                </Popup>
+                            </Marker>
+                        ))}
+
                     </MapContainer>
                 </div>
             </div>
