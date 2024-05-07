@@ -16,10 +16,11 @@ Muitas pessoas buscam por bons locais para a prática de atividades físicas ao 
 
 1. Clone o repositório do GitHub: https://github.com/LeoSntos/Exercita365.git
 2. Navegue até o diretório do projeto: **`cd project`**
-3. Instale as dependências do frontend: **`npm install`**
-4. Instale as dependências do projeto: **`npm install`**
-5. Em outro terminal, inicie o servidor JSON: **`npm run server`**
-6. Em outro terminal, inicie o frontend: **`npm run dev`**
+3. Instale as dependências do projeto: **`npm install`**
+4. Inicie um json server: **`npm run server`**
+5. Em outro terminal, Navegue até o diretório do projeto: **`cd project`**
+6. Inicie o servidor JSON: **`npm run server`**
+7. Em outro terminal, inicie o frontend: **`npm run dev`**
 
 ### **Melhorias Futuras**
 
